@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexico | English Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Material Icons-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+
+    <!-- Open Graph meta tags -->
+    <!-- dimension: 1200:630 px -->
+    <meta property="og:title" content="Lexico | English Dictionary">
+    <meta property="og:description"
+        content="Simple and easy to use english dictionary app. Web-based and therefore accessible from anywhere in the world, at any time, on any device as long as you have an internet connection. Comes with audio pronunciation">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/razaq/image/upload/v1686827536/lexico/screenshot_qlzn8m.png">
+    <meta property="og:url" content="https://lexicoapp.netlify.app/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card meta tags -->
+    <!-- minimum dimensions of 300x157px or maximum of 4096x4096px -->
+    <meta name="twitter:title" content="Lexico | English Dictionary">
+    <meta name="twitter:description"
+        content="Simple and easy to use english dictionary app. Web-based and therefore accessible from anywhere in the world, at any time, on any device as long as you have an internet connection. Comes with audio pronunciation">
+    <meta name="twitter:image"
+        content="https://res.cloudinary.com/razaq/image/upload/v1686827536/lexico/screenshot_qlzn8m.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@razaqjs">
+    <meta name="twitter:creator" content="@razaqjs">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="/logo.png" alt="logo" width="28px">
+            <span class="text">Lexico</span>
+        </header>
+        <div class="search">
+            <input type="text" placeholder="Search a word" required>
+            <i class="fas fa-search"></i>
+            <span class="material-symbols-outlined">close</span>
+        </div>
+        <p class="info-text">Type a word and press Enter to get the meaning, pronunciation, and synonyms of the word.
+        </p>
+        <ul>
+            <li class="word">
+                <div class="details">
+                    <p></p>
+                    <span></span>
+                </div>
+                <i class="fas fa-volume-up"></i>
+            </li>
+            <div class="content">
+                <li class="meaning">
+                    <div class="details">
+                        <p>Meaning</p>
+                        <span></span>
+                    </div>
+                </li>
+                <li class="example">
+                    <div class="details">
+                        <p>Example</p>
+                        <span></span>
+                    </div>
+                </li>
+                <li class="synonyms">
+                    <div class="details">
+                        <p>Synonyms</p>
+                        <div class="list"></div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <div class="dev-info-overlay">
+        <!-- twitter, linkedin, github, youtube -->
+        <ul class="links">
+            <li class="dev-image link" onclick="window.open('https://razaq.netlify.app', '_blank')" title="Porfolio">
+                <img src="/razaq.jpg" alt="Abdulrazaq Saliu">
+            </li>
+            <li class="link" onclick="window.open('https://twitter.com/razaqjs', '_blank')">
+                <i class="fa-brands fa-twitter"></i>
+            </li>
+            <li class="link" onclick="window.open('https://www.linkedin.com/in/razaqjs/', '_blank')">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </li>
+            <li class="link" onclick="window.open('https://www.github.com/razaqjs/', '_blank')">
+                <i class="fa-brands fa-github"></i>
+            </li>
+            <li class="link" onclick="window.open('https://youtube.com/@razaqjs', '_blank')">
+                <i class="fa-brands fa-youtube"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="info-icon">
+        <span class="material-symbols-outlined">
+            info
+        </span>
+    </div>
+    <script src="dom.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
