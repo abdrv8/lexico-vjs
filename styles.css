@@ -206,7 +206,7 @@ ul .content::-webkit-scrollbar-thumb {
 
 .links {
   position: absolute;
-  bottom: 9%;
+  bottom: 11%;
   right: -280px;
   display: flex;
   justify-content: center;
